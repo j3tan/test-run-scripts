@@ -3,10 +3,18 @@
     "sourceRoot": "packages/foo/src",
     "projectType": "library",
     "targets": {
-        "build": {
+        "build-script": {
           "executor": "@nrwl/workspace:run-script",
           "options": {
-            "script": "build"
+            "script": "test-script"
+          }
+        },
+        "build-commands": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+                "npm run test-commands --prefix ./packages/foo"
+            ]
           }
         }
     }
