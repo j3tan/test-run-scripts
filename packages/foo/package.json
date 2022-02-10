@@ -1,0 +1,8 @@
+{
+    "name": "foo",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "cp ./start.js ./end.js"
+    }
+  }
+  
