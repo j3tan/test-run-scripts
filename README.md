@@ -1,4 +1,4 @@
-# Repro for `run-scripts` and `run-commands` issues
+# Repro for `run-scripts` and `run-commands` issues in `NX`
 
 This repo documents a bug with `run-scripts` and `run-commands` where stringification of arguments leads to unexpected results. Specifically, `--verbose` translated to `--verbose=true` for most CLIs will end in breakage. `cp` is used in these examples as a basic example. Other CLIs, such as `tsc` also fail.
 
