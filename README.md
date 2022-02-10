@@ -53,6 +53,11 @@ Object.keys(options).forEach((r) => {
 
 ## `run-commands` issue
 
+```bash
+yarn nx run foo:build-commands --verbose
+```
+
+Produces:
 
 ```bash
 > nx run foo:build-commands --verbose
