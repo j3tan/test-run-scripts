@@ -7,6 +7,7 @@ This repo documents a bug with `run-scripts` and `run-commands` where stringific
 * [Setup](#setup)
 * [`run-scripts` issue](#run-scripts-issue)
 * [`run-commands` issue](#run-commands-issue)
+* [`run-many` issue](#run-many-issue)
 
 
 ## Setup
@@ -105,3 +106,11 @@ function transformCommand(
   }
 }
 ```
+
+## `run-many` issue
+
+```bash
+yarn nx run-many --target=build-script --all --verbose
+```
+
+Will cause this too since `--verbose` is forwarded along
